@@ -1,0 +1,38 @@
+@import "./_variables.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+body {
+    background-color: $light-steel-blue-soft;
+    height: 100%;
+}
+
+.contentContainer{
+    display: flex;
+}
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    display: block;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: $dark-sea-green;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: none;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: $light-steel-blue;
+}

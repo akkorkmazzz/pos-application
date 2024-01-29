@@ -1,0 +1,68 @@
+@import "../../_variables.scss";
+
+.basketBarContainer{
+    background-color: $white;
+    width: 20%;
+    height: calc(100vh - 120px);
+    border-radius: 8px;
+    .titleContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: $indian-red;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    .mainContentContainer{
+        height: calc(100vh - 500px);
+        overflow-y: scroll;
+    }
+    .footerSection{
+
+        .subTotalContainer{
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            .title{
+                font-weight: 600;
+            }
+            border-top: 1px solid $dark-sea-green;
+        }
+        .kdvContainer{
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid $dark-sea-green;
+            .title{
+                font-weight: 600;
+            }
+            .kdvPrice{
+                color: $red;
+            }
+        }
+        .grandTotalContainer{
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid $dark-sea-green;
+            .title{
+                font-weight: 600;
+                font-size: 20px;
+                color: $green;
+            }
+            .price{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+        .createOrderButtonCont{
+            padding: 0px 20px;
+            margin-top: 30px;
+        }
+        .cleanButtonCont{
+            padding: 0px 20px;
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import '../../_variables.scss';
+
+.headerMenuContainer{
+    display: flex;
+    // gap: 4px;
+    .menuItem{
+        display: grid;
+        gap: 4px;
+        cursor: pointer;
+        padding: 6px;
+        width: 96px;
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        span{
+            font-size: 11px;
+        }
+        .line{
+            background-color: $black;
+            height: 2px;
+            width: 0%;
+        }
+        &:hover{
+            .line{
+                transition: 250ms;
+                width: 100%;
+            }
+        }
+    }
+}

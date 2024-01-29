@@ -1,0 +1,24 @@
+@import '../../_variables.scss';
+
+.filterBarContainer{
+    display: grid;
+    gap: 20px;
+    width: 10%;
+    height: calc(100vh - 120px);
+    .boxContainer{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $light-khaki;
+        height: 90px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        span{
+            font-size: 16px;
+            font-weight: 600;
+        }
+        &:hover{
+            background-color: $indian-red-soft;
+        }
+    }
+}

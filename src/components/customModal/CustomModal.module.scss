@@ -1,0 +1,43 @@
+@import "../../_variables.scss";
+
+.openCustomModalContainer{
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $black-soft;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    transition: 850ms;
+    .mainContentContainer{
+        width: 850px;
+        height: 450px;
+        border-radius: 12px;
+        background-color: $white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 180px;
+        .titleCont{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            border-bottom: 1px solid $black-soft;
+            h3{
+                margin-bottom: 6px;
+            }
+            div{
+                cursor: pointer;
+            }
+        }
+        .contentContainer{
+            padding: 12px 20px;
+        }
+    }
+}
+.closeCustomModalContainer{
+    transition: 850ms;
+    display: none;
+}
